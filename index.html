@@ -1,0 +1,74 @@
+<!--
+Daniel Leach
+Intro to Internet Computing
+COP 3813
+
+Project 4 ToDo List with JQuery
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>ToDo List</title>
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">To-Do List</h1>
+        <div class="row" >
+            <div class="col-8 mx-auto" >
+                <div class="input-group">
+                    <input  type="text" class="form-control" id="inputBox" >
+                    <button type="submit" class="btn button"><i class="fas fa-plus"></i></button>  
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container col-8 mx-auto">
+                <ul id="todoItems " ></ul>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-8 mx-auto text-center">
+                <div id="buttons">
+                    <button class="btn" type="submit" id="clearChecked">Clear Checked</button>
+                    <button class="btn" type="submit" id="undo">Undo All</button>
+                    <button class="btn" type="submit" id="clear">Clear All</button>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+
+<script src="./js/script.js"></script>
+</html>
+
+
